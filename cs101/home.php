@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>| Vistaar |</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="page-header">
-    <h1>Vistaar music room booking</h1>
+    <h1>Vistaar music room booking<small> Portal</small></h1>
     </div>
     <nav class="navbar navbar-default navbar-static-left">
   <div class="container" align = "l">
@@ -25,6 +25,8 @@
 
   </div>
 </nav>
+<center>
+
 <div class="panel panel-default">
   <div class="panel-heading">Calendar</div>
 
@@ -114,7 +116,8 @@ echo "</tr></table>";
 </div>
 <div class="panel panel-default">
   <div class="panel-heading">Last 10 appointments</div>
-
+</center>
+<center>
   <div class = "panel-body">
   <?php
   echo "<table border='1'>
@@ -122,8 +125,7 @@ echo "</tr></table>";
  <th>Firstname</th>
  <th>Email</th>
  <th> Date</th>
- <th>ID</th>
- </tr>";
+  </tr>";
   $no 	= 1;
   $total 	= 0;
   while ($row = mysqli_fetch_array($query))
@@ -137,6 +139,7 @@ echo "</tr></table>";
       </tr>';
     $no++;
   }?>
+</center>
 </div>
 </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
